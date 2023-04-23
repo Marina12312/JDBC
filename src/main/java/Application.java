@@ -36,5 +36,6 @@ public class Application {
         for (Employee employee : employees){
             System.out.println(employee.getFirst_name());
         }
+        employeeDAO.updateEmployee(5);
     }
 }

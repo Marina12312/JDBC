@@ -1,6 +1,10 @@
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceUtil;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class EmployeeDAOImpl   implements EmployeeDAO{
@@ -9,11 +13,14 @@ public class EmployeeDAOImpl   implements EmployeeDAO{
 
     @Override
     public List<Employee> getAllEmployee() {
-        return null;
+        try (Session session= HibernateSessionFactoryUtil.getSessionFactory().openSession()){
+return session.createQuery("FROM Employee").list();
+        }
     }
 
     @Override
     public void updateEmployee(Employee employee) {
+
         Session session= HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction transaction=session.beginTransaction();
         session.update(employee);
@@ -39,11 +46,13 @@ public class EmployeeDAOImpl   implements EmployeeDAO{
         transaction.commit();
         session.close();
 
+
     }
 
     @Override
     public Employee getEmployeeByID(int id) {
         return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(Employee.class,id);
+
 
     }
 }

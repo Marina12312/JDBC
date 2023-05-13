@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91984fa-8da2-4f04-a6d3-7f63d14cae60" name="Changes" comment="HibernateSessionFactoryUtil ошибка">
+    <list default="true" id="c91984fa-8da2-4f04-a6d3-7f63d14cae60" name="Changes" comment="HibernateSessionFactoryUtil">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CityDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Enity" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +96,8 @@
       <workItem from="1683215532199" duration="4776000" />
       <workItem from="1683711707857" duration="13038000" />
       <workItem from="1683884990853" duration="5829000" />
-      <workItem from="1683904354966" duration="602000" />
+      <workItem from="1683904354966" duration="2331000" />
+      <workItem from="1683989169433" duration="2553000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC">
       <created>1682189290067</created>
@@ -114,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683886765410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HibernateSessionFactoryUtil">
+      <created>1683913592263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683913592263</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +148,7 @@
     <MESSAGE value="JDBC" />
     <MESSAGE value="Реализовала методы" />
     <MESSAGE value="HibernateSessionFactoryUtil ошибка" />
-    <option name="LAST_COMMIT_MESSAGE" value="HibernateSessionFactoryUtil ошибка" />
+    <MESSAGE value="HibernateSessionFactoryUtil" />
+    <option name="LAST_COMMIT_MESSAGE" value="HibernateSessionFactoryUtil" />
   </component>
 </project>

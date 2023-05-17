@@ -1,12 +1,6 @@
 
 
-import javax.persistence.Column;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="employee")
@@ -22,9 +16,10 @@ public class Employee{
     private String gender;
     @Column(name = "age")
     private int age;
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "city_id")
     @Column(name = "city_id")
-    private int city_id;
-
+    private City cityId;
 
     public Employee(String first_name) {
         this.id=id;
@@ -32,14 +27,21 @@ public class Employee{
         this.last_name=last_name;
         this.gender=gender;
         this.age=age;
-        this.city_id=city_id;
 
             }
 
 
 
+    public City getCityId() {
+        return cityId;
+    }
+
     public String getFirst_name() {
         return first_name;
+    }
+
+    public void setCityId(City cityId) {
+        this.cityId = cityId;
     }
 
     public Employee() {
@@ -51,7 +53,7 @@ public class Employee{
             return "Employee{" + ", last_Name='" + last_name + '\'' +
                     ", gender='" + gender + '\'' +
                     ", age=" + age +
-                    ", cityId=" + city_id +
+                    ", cityId="  +
                     '}';
         }
     public void setFirst_name(String first_name) {
@@ -82,13 +84,9 @@ public class Employee{
         this.age = age;
     }
 
-    public int getCity_id() {
-        return city_id;
-    }
 
-    public void setCity_id(int city_id) {
-        this.city_id = city_id;
-    }
+
+
 }
 
 

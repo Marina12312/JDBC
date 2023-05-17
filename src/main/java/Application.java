@@ -1,6 +1,7 @@
 import javax.persistence.EntityManager;
 import java.sql.*;
 import java.util.List;
+import java.sql.SQLException;
 
 public class Application {
     public static void main(String[] args) throws SQLException {
@@ -14,7 +15,7 @@ public class Application {
 
         Employee employee = new Employee("Marina");
 
-        employee.setCity_id(cityForEmployee.getCity_id());
+        employee.setCityId(cityForEmployee);
 
 
         employeeDao.createEmployee(employee);
